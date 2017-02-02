@@ -24,8 +24,6 @@ export class Container extends React.Component {
           if (!this.props.route.auth.loggedIn()) {
             e.preventDefault()
             this.props.route.auth.login('/user')
-            { /* this.setState({ showLogin: true, loginTarget: linkTo }); */
-            }
           }
         }}> User</Link>
         {children}

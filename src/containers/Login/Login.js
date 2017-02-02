@@ -24,7 +24,6 @@ export class Login extends React.Component {
   }
 
   render () {
-    const { auth } = this.props
     return (
       <div className={styles.root}>
         <h2>Please login </h2>
