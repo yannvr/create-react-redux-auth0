@@ -6,7 +6,7 @@ import User from './containers/User/User'
 import Container from './containers/Container/Container'
 import Login from './containers/Login/Login'
 
-const auth = new AuthService('7QC691TukHCKQw596KWi17effizhUYfD', 'neocode.auth0.com')
+const auth = new AuthService('AUTH0_CLIENT_ID', 'neocode.auth0.com')
 
 // onEnter callback to validate authentication in private routes
 const requireAuth = (nextState, replace) => {
