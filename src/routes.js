@@ -1,7 +1,8 @@
 import React from 'react'
 import {Route, IndexRedirect} from 'react-router'
 import AuthService from './utils/AuthService'
-import About from './containers/About'
+import About from './components/About'
+import NotFound from './components/NotFound'
 import User from './containers/User/User'
 import Container from './containers/Container/Container'
 import Login from './containers/Login/Login'
@@ -26,7 +27,7 @@ export const makeRoutes = () => {
       <Route path='/user' component={User} onEnter={requireAuth} />
       <Route path='/about' component={About} />
       <Route path='/login' component={Login} />
-      {/* <Route path='*' component={NotFound}/> */}
+       <Route path='*' component={NotFound}/>
     </Route>
   )
 }
